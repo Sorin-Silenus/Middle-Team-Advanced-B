@@ -7,7 +7,7 @@ public class even_odd_site {
         //opens file
         BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
         //adds title to file
-        file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
+        file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n);
         //creates table with headers Even Numbers and Odd numbers
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         //loops from 1 - 50
@@ -19,20 +19,18 @@ public class even_odd_site {
             }
             else {
                 //adds i to odd section
-                file.write("<tr><td></td><td>" + i + "</td></tr>\n");
+                file("<tr><td></td><td>" + i + "</td></tr>\n");
             }
         }
         file.write("</table>\n</body>\n</html>");
-        //close file
-        file.close();
         //creates file reader
-        BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
+        BufferedReader reader = new BufferedReader(new FileReader("number.html"));
         String line;
         //reads and prints each line from file
         while ((line = reader.readLine()) != null) {
             System.out.println(line);
         }
         //closing
-        reader.close();
+        reader.close;
     }
 }
